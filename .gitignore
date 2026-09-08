@@ -1,0 +1,12 @@
+.build/
+.swiftpm/
+build/
+dist/
+.DS_Store
+*.xcuserstate
+xcuserdata/
+private-evidence/
+__pycache__/
+*.pyc
+*.dmg
+*.xcarchive

@@ -1,0 +1,47 @@
+name: Longhaul
+options:
+  bundleIdPrefix: space.exlumina
+  deploymentTarget:
+    macOS: '26.0'
+packages:
+  Longhaul:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    MACOSX_DEPLOYMENT_TARGET: '26.0'
+    ARCHS: arm64
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: '-'
+    ENABLE_HARDENED_RUNTIME: YES
+    CURRENT_PROJECT_VERSION: '1'
+    MARKETING_VERSION: '1.0.0'
+targets:
+  Longhaul:
+    type: application
+    platform: macOS
+    sources:
+      - path: App
+      - path: Resources
+      - path: LICENSE
+        buildPhase: resources
+      - path: integrations
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - package: Longhaul
+        product: LonghaulCore
+      - package: Longhaul
+        product: LonghaulBridge
+      - sdk: libsqlite3.tbd
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: space.exlumina.longhaul
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_LSUIElement: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Longhaul
+        INFOPLIST_KEY_CFBundleIconFile: Longhaul
+        INFOPLIST_KEY_NSHumanReadableCopyright: 'Copyright © 2026 Kian Konrad Tajbakhsh. Licensed under GPLv3.'
+        SWIFT_OBJC_BRIDGING_HEADER: App/Support/Longhaul-Bridging-Header.h
+    scheme:
+      testTargets: []

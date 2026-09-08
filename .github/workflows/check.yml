@@ -1,0 +1,25 @@
+name: Build and test
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  macos:
+    runs-on: macos-26
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Show toolchain
+        run: xcodebuild -version && swift --version
+      - name: Install project generator
+        run: brew install xcodegen
+      - name: Test core and integrations
+        run: ./script/test_all.sh
+      - name: Build the native app
+        run: ./script/build_and_run.sh --build-only
+      - name: Validate source package
+        run: python3 script/check_source.py
