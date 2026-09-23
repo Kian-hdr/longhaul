@@ -22,22 +22,25 @@ for value in (a.url, a.homepage):
         p.error('Use a literal HTTPS URL')
 if a.output.exists():
     p.error('Output exists; choose a fresh draft path')
+versioned_url = a.url.replace(f"/v{a.version}/", "/v#{version}/").replace(
+    f"Longhaul-{a.version}-", "Longhaul-#{version}-"
+)
 text = f'''cask "longhaul" do
   version "{a.version}"
   sha256 "{a.sha256.lower()}"
 
-  url "{a.url}"
+  url "{versioned_url}"
   name "Longhaul"
   desc "Keep supported jobs awake and retain recovery checkpoints"
   homepage "{a.homepage}"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "Longhaul.app"
 
-  uninstall quit: "space.exlumina.longhaul",
-            launchctl: "space.exlumina.longhaul.companion"
+  uninstall launchctl: "space.exlumina.longhaul.companion",
+            quit:      "space.exlumina.longhaul"
 end
 '''
 a.output.parent.mkdir(parents=True, exist_ok=True)

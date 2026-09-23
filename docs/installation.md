@@ -3,23 +3,22 @@
 ## Install an official binary
 
 Requires macOS 26+ on Apple silicon. Open the
-[official release page](https://github.com/Kian-hdr/longhaul/releases) and download
-`Longhaul-1.0.0-arm64.zip` and `SHA256SUMS` from the same v1.0.0 release.
-The binary is not available until the release gates in [STATUS.md](STATUS.md) pass.
-Do not disable Gatekeeper to substitute a development build.
+[official release page](https://github.com/Kian-hdr/longhaul/releases/tag/v1.0.0)
+and download `Longhaul-1.0.0-arm64.dmg` and `SHA256SUMS`. The release also
+contains a ZIP. Do not disable Gatekeeper to substitute a development build.
 
 In the directory containing both downloads, verify the bytes before extraction:
 
 ```sh
-shasum -a 256 -c SHA256SUMS
+grep 'Longhaul-1.0.0-arm64.dmg$' SHA256SUMS | shasum -a 256 -c -
 ```
 
-Only continue if the ZIP matches. Extract the ZIP and verify the extracted app:
+Only continue if the DMG matches. Open it and verify the enclosed app:
 
 ```sh
-codesign --verify --deep --strict --verbose=2 Longhaul.app
-spctl --assess --type execute --verbose=2 Longhaul.app
-codesign -dv --verbose=4 Longhaul.app
+codesign --verify --deep --strict --verbose=2 '/Volumes/Longhaul 1.0.0/Longhaul.app'
+spctl --assess --type execute --verbose=2 '/Volumes/Longhaul 1.0.0/Longhaul.app'
+codesign -dv --verbose=4 '/Volumes/Longhaul 1.0.0/Longhaul.app'
 ```
 
 The expected bundle identifier is `space.exlumina.longhaul`; the official signer is
@@ -103,4 +102,4 @@ Keep `~/Library/Application Support/Longhaul` until useful recovery files have
 been reviewed and backed up. Do not erase saved scenes or job outputs as an
 uninstall step. Blender add-on removal is manual in Blender preferences so newer
 unrelated preferences are preserved. See [ownership and removal rules](integration-removal.md).
-There is no published Homebrew cask or Mac App Store version.
+The Homebrew cask is `Kian-hdr/tap/longhaul`. No Mac App Store version is published.

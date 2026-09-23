@@ -2,7 +2,8 @@
 
 The direct-download target is Longhaul v1.0.0 for macOS 26+ / arm64. The source
 license is GPL-3.0-only. The current acceptance state is in [STATUS.md](STATUS.md).
-Homebrew and Mac App Store distribution are separate, unqualified channels.
+The Homebrew cask is published and verified for audit and installation on the
+release Mac. Mac App Store distribution remains a separate, unqualified channel.
 
 ## Source and assets
 
@@ -54,12 +55,14 @@ quit before replacing a live installation. Preserve a recoverable previous app.
 After install, verify the installed signature/version and actual reporting before
 resuming protection. Keep preferences, recovery files and unrelated integrations.
 
-## Optional future channels
+## Homebrew and future channels
 
-`script/make_cask.py` can generate a draft from explicit version, URL and SHA-256.
-It is not a publication or installation test. Publish a cask only after hosted
-byte verification and fresh install/uninstall/reinstall checks. Never add a zap
-rule that erases a user's saved recovery artifacts.
+The [published cask](https://github.com/Kian-hdr/homebrew-tap/blob/main/Casks/longhaul.rb)
+points to the verified v1.0.0 DMG. `script/make_cask.py` generates a candidate
+from explicit version, URL and SHA-256; it is not a publication or installation
+test. Hosted bytes, style, strict online audit and installation passed on the
+release Mac. Uninstall was deferred while Longhaul protected active work. Do not
+add a zap rule that erases saved recovery artifacts.
 
 Mac App Store readiness is not claimed. It needs its own entitlement, sandbox,
 API, privacy, packaging and distribution review rather than reusing a Developer ID

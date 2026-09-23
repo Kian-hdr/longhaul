@@ -13,15 +13,18 @@ applications to save recoverable progress as the battery runs low.
 
 ## Install
 
-Use the [official releases](https://github.com/Kian-hdr/longhaul/releases).
-The intended v1.0.0 download is `Longhaul-1.0.0-arm64.zip`, accompanied by
-`SHA256SUMS` and matching source. Binary publication is gated on notarization and
-final installation checks; see the [current release status](docs/STATUS.md).
-Do not substitute an unsigned development build if that asset is unavailable.
+Download the signed and notarized [v1.0.0 DMG](https://github.com/Kian-hdr/longhaul/releases/tag/v1.0.0),
+open it, and move Longhaul to Applications. The release also includes a ZIP,
+`SHA256SUMS`, and matching source. See the [release status](docs/STATUS.md)
+for verification and coverage limits.
 
 [Installation and removal](docs/installation.md) covers verification and setup.
 To have an AI agent install and configure Longhaul, give it the complete
-[setup prompt](SETUP-PROMPT.md). No Homebrew installation is available yet.
+[setup prompt](SETUP-PROMPT.md). Homebrew installation is also available:
+
+```sh
+brew install --cask Kian-hdr/tap/longhaul
+```
 
 ## Automatic task protection
 

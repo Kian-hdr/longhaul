@@ -1,27 +1,29 @@
 # Release status: v1.0.0
 
-Updated 2026-09-08. The reviewed source is public and GitHub CI passed. A signed
-v1.0.0 candidate exists, but the downloadable binary is **not yet release-ready**.
-This is the current checklist; older private development logs are not release evidence.
+Updated 2026-09-23. Longhaul v1.0.0 is published as a signed and notarized
+DMG and ZIP with a verified Homebrew cask. This checklist distinguishes the
+completed release checks from the physical scenarios that remain unqualified.
 
 | Gate | State | Required evidence |
 | --- | --- | --- |
 | Source and icon license | Passed inventory | GPL-3.0-only; original icon generator and component inventory in LICENSE-STATUS.md. |
 | Public documentation/privacy cleanup | Passed | 122 staged files reviewed; private history excluded; all local Markdown links resolve. Anonymous public source download byte-matches the reviewed commit. |
-| Identified candidate commit and matching version | Passed | Candidate source `a45fca770096e947657ea5d816b17a47a91276a5`; embedded source identity; version 1.0.0, build 1, arm64. Release remains a draft without binary assets. |
+| Identified candidate commit and matching version | Passed | Release tag `v1.0.0` and embedded source identity both resolve to `a45fca770096e947657ea5d816b17a47a91276a5`; version 1.0.0, build 1, arm64. |
 | Refactor and regression validation | Passed | Clean local suite and native Release build; [GitHub CI](https://github.com/Kian-hdr/longhaul/actions/runs/34250069012) passed the full suite, native build and source checks from the identified commit. |
 | Native slider repair | Passed local UI check | Tick-mark line removed; final release app must retain it. |
-| Candidate Developer ID signature and nested contents | Passed | Strict nested signatures, hardened runtime, secure timestamps, version/source/arm64, matching license/icon and cache/privacy checks. Final notarized archive checks still remain. |
-| Notarization | Blocked | A working notary credential/profile is required; no acceptance claimed. |
-| Stapling and Gatekeeper | Blocked | Candidate assessment explicitly rejects Unnotarized Developer ID. Accepted notarization and a stapled ticket are still required. |
-| Final installation and launch | Blocked | The test Mac is locked; controlled pause/update and final native UI checks require manual unlock. The installed development build retains the verified slider repair. |
-| Published bytes and checksums | Pending | Download hosted ZIP and compare SHA-256 to the release manifest. |
+| Candidate Developer ID signature and nested contents | Passed | Strict nested signatures, hardened runtime, secure timestamps, version/source/arm64, matching license/icon and cache/privacy checks. |
+| Notarization | Passed | Apple accepted the app ZIP (`5a51806c-72f9-4dca-b76a-599b124fc70b`) and final signed DMG (`9bca3de3-96ff-4dd5-95cb-d41f17a2b1e3`). |
+| Stapling and Gatekeeper | Passed | The app and DMG have validated tickets; strict signature, Gatekeeper, mounted-app and disk-image integrity checks passed. |
+| Final installation and launch | Passed on this Mac | Controlled direct installation and Homebrew installation each launched version 1.0.0; the native Activity view resumed protection for active jobs and `pmset` showed Longhaul's sleep assertion. The installed main binary matched the DMG. |
+| Published bytes and checksums | Passed | Draft downloads and anonymous public DMG download matched `SHA256SUMS`; DMG SHA-256 `9816ecb8942b0ec28a22e83cfcdee6f55d38a55cfd10bed448bc80f0d4a109a2`, ZIP `528973d46770151046d9e0c648f14a59ecb7d839d11d0d9b626459246aaead77`. |
+| Homebrew Cask | Passed for audit and install | `Kian-hdr/tap/longhaul` passed style and strict online audit, installed the public DMG, launched, and resumed protection. Uninstall was not exercised during active protected work. |
 | GitHub private vulnerability reporting | Passed | Repository reporting enabled and verified through GitHub API. |
 
-The intended release assets are `Longhaul-1.0.0-arm64.zip` and `SHA256SUMS` with
-source at the matching `v1.0.0` tag. Homebrew and Mac App Store distribution are not
-part of this release. Do not publish an unsigned or unnotarized replacement asset
-under the official binary name.
+The [published release](https://github.com/Kian-hdr/longhaul/releases/tag/v1.0.0)
+contains `Longhaul-1.0.0-arm64.dmg`, `Longhaul-1.0.0-arm64.zip`, `SHA256SUMS`,
+and matching source. The Homebrew cask is in
+[`Kian-hdr/homebrew-tap`](https://github.com/Kian-hdr/homebrew-tap/blob/main/Casks/longhaul.rb).
+Mac App Store distribution is not part of this release.
 
 ## Refactor changes
 
