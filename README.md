@@ -1,18 +1,18 @@
-# Longhaul
+<h1 align="center">Longhaul</h1>
 
-Keep your Mac awake while your agents and renders work.
+<p align="center">Keep your Mac awake while your agents and renders work.</p>
 
-<img src="Resources/Longhaul.png" alt="Longhaul icon" width="72">
+<p align="center"><img src="Resources/Longhaul.png" alt="Longhaul icon" width="72"></p>
 
-## Download
+<h2 align="center">Download</h2>
 
-<p>
+<p align="center">
 <a href="https://github.com/Kian-hdr/longhaul/releases/download/v1.0.0/Longhaul-1.0.0-arm64.dmg"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download for macOS"></a>
 </p>
 
-[DMG · Apple silicon · v1.0.0](https://github.com/Kian-hdr/longhaul/releases/download/v1.0.0/Longhaul-1.0.0-arm64.dmg)
+<p align="center"><a href="https://github.com/Kian-hdr/longhaul/releases/download/v1.0.0/Longhaul-1.0.0-arm64.dmg">DMG · Apple silicon · v1.0.0</a></p>
 
-[Install with Homebrew](#install) · [Release notes](https://github.com/Kian-hdr/longhaul/releases/tag/v1.0.0)
+<p align="center"><a href="#install">Install with Homebrew</a> · <a href="https://github.com/Kian-hdr/longhaul/releases/tag/v1.0.0">Release notes</a></p>
 
 **Requires macOS 26 or later and Apple silicon.** Free software under
 [GPL-3.0-only](LICENSE), created by Kian Konrad Tajbakhsh.
