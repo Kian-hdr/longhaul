@@ -1,12 +1,6 @@
 # Longhaul
 
-<img src="Resources/Longhaul.png" alt="Longhaul icon" width="112" height="112">
-
-**Keep your Mac working while your agents and renders do.**
-
-Longhaul is a native macOS utility that starts sleep protection when a supported
-task is active and releases it after the work finishes. It also asks cooperating
-applications to save recoverable progress as the battery runs low.
+Keep your Mac awake while your agents and renders work.
 
 ## Download
 
@@ -20,6 +14,12 @@ applications to save recoverable progress as the battery runs low.
 
 **Requires macOS 26 or later and Apple silicon.** Free software under
 [GPL-3.0-only](LICENSE), created by Kian Konrad Tajbakhsh.
+
+<img src="Resources/Longhaul.png" alt="Longhaul icon" width="112" height="112">
+
+Longhaul is a native macOS utility that starts sleep protection when a supported
+task is active and releases it after the work finishes. It also asks cooperating
+applications to save recoverable progress as the battery runs low.
 
 ## Install
 
