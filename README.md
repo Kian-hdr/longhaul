@@ -11,6 +11,12 @@ applications to save recoverable progress as the battery runs low.
 **Requires macOS 26 or later and Apple silicon.** Free software under
 [GPL-3.0-only](LICENSE), created by Kian Konrad Tajbakhsh.
 
+<!-- direct-downloads -->
+[![Download macOS DMG · Apple silicon](https://img.shields.io/badge/Download%20macOS%20DMG%20%C2%B7%20Apple%20silicon-24292F?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Kian-hdr/longhaul/releases/download/v1.0.0/Longhaul-1.0.0-arm64.dmg) [![Install with Homebrew](https://img.shields.io/badge/Install%20with%20Homebrew-8A4B20?style=for-the-badge&logo=homebrew&logoColor=white)](#install)
+
+[Download macOS DMG · Apple silicon](https://github.com/Kian-hdr/longhaul/releases/download/v1.0.0/Longhaul-1.0.0-arm64.dmg) · [Homebrew instructions](#install) · [Release v1.0.0](https://github.com/Kian-hdr/longhaul/releases/tag/v1.0.0)
+<!-- /direct-downloads -->
+
 ## Install
 
 Download the signed and notarized [v1.0.0 DMG](https://github.com/Kian-hdr/longhaul/releases/tag/v1.0.0),
