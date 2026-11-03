@@ -2,7 +2,7 @@
 
 <p align="center">Keep your Mac awake while your agents and renders work.</p>
 
-<p align="center"><img src="Resources/Longhaul.png" alt="Longhaul icon" width="72"></p>
+<p align="center"><img src="Resources/Longhaul.png" alt="Longhaul icon" width="96"></p>
 
 <h2 align="center">Download</h2>
 
