@@ -57,7 +57,7 @@ resuming protection. Keep preferences, recovery files and unrelated integrations
 
 ## Homebrew and future channels
 
-The [published cask](https://github.com/Kian-hdr/homebrew-tap/blob/main/Casks/longhaul.rb)
+The [published cask](https://github.com/Kian-hdr/homebrew-apps/blob/main/Casks/longhaul.rb)
 points to the verified v1.0.0 DMG. `script/make_cask.py` generates a candidate
 from explicit version, URL and SHA-256; it is not a publication or installation
 test. Hosted bytes, style, strict online audit and installation passed on the

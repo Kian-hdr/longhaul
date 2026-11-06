@@ -16,13 +16,13 @@ completed release checks from the physical scenarios that remain unqualified.
 | Stapling and Gatekeeper | Passed | The app and DMG have validated tickets; strict signature, Gatekeeper, mounted-app and disk-image integrity checks passed. |
 | Final installation and launch | Passed on this Mac | Controlled direct installation and Homebrew installation each launched version 1.0.0; the native Activity view resumed protection for active jobs and `pmset` showed Longhaul's sleep assertion. The installed main binary matched the DMG. |
 | Published bytes and checksums | Passed | Draft downloads and anonymous public DMG download matched `SHA256SUMS`; DMG SHA-256 `9816ecb8942b0ec28a22e83cfcdee6f55d38a55cfd10bed448bc80f0d4a109a2`, ZIP `528973d46770151046d9e0c648f14a59ecb7d839d11d0d9b626459246aaead77`. |
-| Homebrew Cask | Passed for audit and install | `Kian-hdr/tap/longhaul` passed style and strict online audit, installed the public DMG, launched, and resumed protection. Uninstall was not exercised during active protected work. |
+| Homebrew Cask | Passed for audit and install | `kian-hdr/apps/longhaul` passed style and strict online audit, installed the public DMG, launched, and resumed protection. Uninstall was not exercised during active protected work. |
 | GitHub private vulnerability reporting | Passed | Repository reporting enabled and verified through GitHub API. |
 
 The [published release](https://github.com/Kian-hdr/longhaul/releases/tag/v1.0.0)
 contains `Longhaul-1.0.0-arm64.dmg`, `Longhaul-1.0.0-arm64.zip`, `SHA256SUMS`,
 and matching source. The Homebrew cask is in
-[`Kian-hdr/homebrew-tap`](https://github.com/Kian-hdr/homebrew-tap/blob/main/Casks/longhaul.rb).
+[`Kian-hdr/homebrew-tap`](https://github.com/Kian-hdr/homebrew-apps/blob/main/Casks/longhaul.rb).
 Mac App Store distribution is not part of this release.
 
 ## Refactor changes

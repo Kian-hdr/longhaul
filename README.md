@@ -33,7 +33,7 @@ To have an AI agent install and configure Longhaul, give it the complete
 [setup prompt](SETUP-PROMPT.md). Homebrew installation is also available:
 
 ```sh
-brew install --cask Kian-hdr/tap/longhaul
+brew install --cask kian-hdr/apps/longhaul
 ```
 
 ## Automatic task protection

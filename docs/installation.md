@@ -102,4 +102,4 @@ Keep `~/Library/Application Support/Longhaul` until useful recovery files have
 been reviewed and backed up. Do not erase saved scenes or job outputs as an
 uninstall step. Blender add-on removal is manual in Blender preferences so newer
 unrelated preferences are preserved. See [ownership and removal rules](integration-removal.md).
-The Homebrew cask is `Kian-hdr/tap/longhaul`. No Mac App Store version is published.
+The Homebrew cask is `kian-hdr/apps/longhaul`. No Mac App Store version is published.
