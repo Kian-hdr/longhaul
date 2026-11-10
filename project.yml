@@ -41,7 +41,7 @@ targets:
         INFOPLIST_KEY_LSUIElement: YES
         INFOPLIST_KEY_CFBundleDisplayName: Longhaul
         INFOPLIST_KEY_CFBundleIconFile: Longhaul
-        INFOPLIST_KEY_NSHumanReadableCopyright: 'Copyright © 2026 Kian Konrad Tajbakhsh. Licensed under GPLv3.'
+        INFOPLIST_KEY_NSHumanReadableCopyright: 'Copyright © 2026 Kian Konrad. Licensed under GPLv3.'
         SWIFT_OBJC_BRIDGING_HEADER: App/Support/Longhaul-Bridging-Header.h
     scheme:
       testTargets: []
