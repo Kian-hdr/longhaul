@@ -40,7 +40,7 @@ struct AboutView: View {
                 Link("Releases", destination: URL(string: "https://github.com/Kian-hdr/longhaul/releases")!)
             }
             Section {
-                Text("© 2026 Kian Konrad Tajbakhsh")
+                Text("© 2026 Kian Konrad")
                     .font(.footnote).foregroundStyle(.secondary)
             }
         }
