@@ -325,7 +325,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Longhaul;
 				INFOPLIST_KEY_CFBundleIconFile = Longhaul;
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Kian Konrad Tajbakhsh. Licensed under GPLv3.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Kian Konrad. Licensed under GPLv3.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -345,7 +345,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Longhaul;
 				INFOPLIST_KEY_CFBundleIconFile = Longhaul;
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Kian Konrad Tajbakhsh. Licensed under GPLv3.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Kian Konrad. Licensed under GPLv3.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

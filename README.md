@@ -118,4 +118,4 @@ state machine, not enforcement of native agent GUI actions.
 [Report an issue](https://github.com/Kian-hdr/longhaul/issues) ·
 [License inventory](LICENSE-STATUS.md)
 
-Copyright © 2026 Kian Konrad Tajbakhsh. Distributed without warranty; see [LICENSE](LICENSE).
+Copyright © 2026 Kian Konrad. Distributed without warranty; see [LICENSE](LICENSE).
