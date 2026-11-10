@@ -4,7 +4,7 @@ On 2026-09-06, the owner selected GNU GPLv3 for Longhaul. The project uses
 **GNU General Public License version 3 only (SPDX: GPL-3.0-only)**. This records
 version 3 without extending the grant to later license versions.
 
-Copyright © 2026 Kian Konrad Tajbakhsh. Created by Kian Konrad Tajbakhsh.
+Copyright © 2026 Kian Konrad. Created by Kian Konrad.
 
 Longhaul is free software: you may redistribute it and/or modify it under the
 GNU General Public License version 3 as published by the Free Software Foundation.
