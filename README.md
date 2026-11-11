@@ -1,10 +1,13 @@
-<h1 align="center">Longhaul</h1>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/README_Wordmark_Dark.svg">
+    <img src="docs/assets/README_Wordmark_Light.svg" width="158" height="42" alt="Longhaul">
+  </picture>
+</p>
 
 <p align="center">Keep your Mac awake while your agents and renders work.</p>
 
 <p align="center"><img src="Resources/Longhaul.png" alt="Longhaul icon" width="96"></p>
-
-<h2 align="center">Download</h2>
 
 <p align="center">
 <a href="https://github.com/Kian-hdr/longhaul/releases/download/v1.0.0/Longhaul-1.0.0-arm64.dmg"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download for macOS"></a>
