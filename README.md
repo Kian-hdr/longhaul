@@ -15,7 +15,7 @@
 <p align="center"><a href="#install">Install with Homebrew</a> · <a href="https://github.com/Kian-hdr/longhaul/releases/tag/v1.0.0">Release notes</a></p>
 
 **Requires macOS 26 or later and Apple silicon.** Free software under
-[GPL-3.0-only](LICENSE), created by Kian Konrad Tajbakhsh.
+[GPL-3.0-only](LICENSE), created by Kian Konrad.
 
 Longhaul is a native macOS utility that starts sleep protection when a supported
 task is active and releases it after the work finishes. It also asks cooperating
